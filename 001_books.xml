@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+<?xml 和 ?> 都不允许中间有空格
+ -->
+
+<!-- books标签标示多个图书信息 -->
+<!-- XML一定要有个根标签 -->
+<books>
+    <!-- book标签表示一个图书信息 -->
+    <book sn="SN123456781">
+        <name>Java从入门到放弃</name>
+        <author>Rick</author>
+        <price>51.8</price>
+    </book>
+    <book sn="SN123456782">
+        <name>MySQL</name>
+        <author>&lt;Morty&gt;</author>
+        <price>31.8</price>
+        <![CDATA[<这里的字符不会被解析><<<>>>>]]>
+    </book>
+    <!-- 单标签 -->
+    <book name="JavaScript" sn="SN123456783" author="Ryan" price="38.8"/>
+</books>
